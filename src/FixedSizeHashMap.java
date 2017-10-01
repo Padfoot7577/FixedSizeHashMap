@@ -8,9 +8,9 @@
 public class FixedSizeHashMap<V> {
     
     /** Instance variables. */
-    private int size;
-    private Entry<V>[] buckets;
-    private int itemCount;
+    private int size; // fixed size of bucket
+    private Entry<V>[] buckets; // array where map's key/value pair entries are stored
+    private int itemCount; // number of key/value pairs currently present in map
     
     /**
      * Make a new fixed-size hash map of the specified size.
@@ -20,14 +20,6 @@ public class FixedSizeHashMap<V> {
         this.size = size;
         this.buckets = new Entry[size];
         this.itemCount = 0;
-    }
-    
-    /**
-     * Make a new fixed-size hash map of the specified size.
-     * @param size fixed size of the map
-     */
-    public FixedSizeHashMap<V> Constructor(final int size) {
-        return new FixedSizeHashMap<>(size);
     }
     
     /**
