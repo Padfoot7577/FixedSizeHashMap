@@ -16,4 +16,4 @@ To run tests: ```java FixedSizeHashMapTest``` <br />
 ```set()```: amortized O(1) <br />
 ```get()```: amortized O(1) <br />
 ```delete()```: amortized O(1) <br />
-```load()```: amortized O(1) <br /
+```load()```: amortized O(1) <br />
